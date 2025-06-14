@@ -40,7 +40,7 @@ const Navbar = () => {
             <p onClick={()=>handleNavigate('/about')} data-aos="fade-down" data-aos-duration='1600' className='font-varun font-semibold text-lg hover:text-emerald-400 hover:text-shadow-amber-50 hover:cursor-pointer mr-2'>About Us</p>
             <p onClick={()=>alert('this page is under Developmet!!')} data-aos="fade-down" data-aos-duration='1800' className='font-varun font-semibold text-lg hover:text-emerald-400 hover:text-shadow-amber-50 hover:cursor-pointer mr-2'>Settings</p>
         </nav>
-      <div className="sm:hidden px-4 py-2 flex justify-between items-center text-white">
+      <div data-aos="fade-down" data-aos-duration='1200' className="sm:hidden px-4 py-2 flex justify-between items-center text-white">
         <button onClick={handleToggle} className={`px-2 py-2 rounded-full bg-[#141414] transition-all duration-150 transform ${mobileOpen ?'rotate-180':'rotate-0'}`}>
           <ChevronDown size={28} className='text-white'/>
         </button>
