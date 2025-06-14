@@ -1,0 +1,24 @@
+.post-content{
+    color:white;
+    font-family: cursive;
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    padding:2px;
+}
+.post-content h1 {
+  font-size:18px;
+  font-weight: bold;
+  margin-bottom:3px
+}
+.post-content h2{
+    font-size: 17px;
+    font-weight: 600;
+}
+.post-content h3 {
+  font-size:17px;
+}
+.post-content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}

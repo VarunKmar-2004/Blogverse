@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import "tailwindcss";
+@theme{
+    --font-varun:'Edu VIC WA NT Hand','cursive'
+}
+.ql-container {
+  border: none !important;
+}
+.ql-toolbar button:hover {
+  background-color: rgb(69, 244, 139) !important;
+}
+.ql-editor {
+  font-family: 'Edu VIC WA NT Hand', cursive;
+}
