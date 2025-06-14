@@ -28,7 +28,7 @@ const Home = () => {
           ):( '')}
           
           <div className='absolute z-10 flex flex-col items-center'>
-            <h1 data-aos="fade-right" data-dao-duration='1500' className='font-varun font-bold text-3xl sm:text-4xl text-white'>Welcome to BlogVerse...</h1>
+            <h1 data-aos="fade-right" data-dao-duration='1500' className='font-varun font-bold text-3xl sm:text-4xl text-white text-center'>Welcome to BlogVerse...</h1>
             <p data-aos="fade-left" data-dao-duration='1700'  className='font-varun font-semibold text-md sm:text-lg text-emerald-500 text-center mt-[20px]'>-Where Ideas Spark and Stories Shine.</p>
             <button onClick={()=>scrollTo('post')} data-aos="fade-up" data-dao-duration='2000' className='bg-emerald-600 rounded-full shadow-sm hover:shadow-emerald-400 transition-shadow duration-300 cursor-pointer text-center px-2 py-2 mt-5'><ArrowDown size={28} className='text-black font-bold'/></button>
           </div>

@@ -23,8 +23,8 @@ const Navbar = () => {
   }
   }
   return (
-    <div className='px-[20px] py-[16px] flex flex-row items-center justify-around fixed top-0 left-0 right-0 z-50 bg-black'>
-        <div className='px-8 py-4'>
+    <div className='sm:px-[20px] px-[10px] py-[16px] flex flex-row items-center justify-around fixed top-0 left-0 right-0 z-50 bg-black'>
+        <div className='sm:px-8 px-2 py-4'>
             <h1 data-aos="fade-down" data-aos-duration='1000' className='font-varun font-bold md:text-3xl text-2xl text-emerald-500 '>BlogVerse..</h1>
         </div>
         <nav className='hidden px-2 sm:flex flex-row items-center gap-[30px] text-white transition duration-200 ease-in-out'>
