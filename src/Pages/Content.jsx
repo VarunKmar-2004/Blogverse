@@ -9,7 +9,7 @@ const Content = () => {
     const [post, setPost] = useState(null);
     const fetchPost=async(id)=>{
        try {
-      const { data } = await axios.get(`http://localhost:5000/api/home/posts/${id}`);
+      const { data } = await axios.get(`https://backend-blog-ruddy.vercel.app/api/home/posts/${id}`);
       setPost(data);
     } catch (error) {
       console.error("Error fetching post:", error);
