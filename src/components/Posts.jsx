@@ -91,11 +91,11 @@ const Posts = () => {
               <div className="flex flex-col gap-1">
                 <div className="flex flex-row items-center gap-2">
                   <img
-                    src={post.profile_picture}
+                    src={post.profile_pic}
                     alt="user"
                     className="w-[30px] h-[30px] rounded-full bg-cover hover:cursor-pointer"
                   />
-                  <p className="text-white font-varun font-medium hover:cursor-pointer">{post.name}</p>
+                  <p className="text-white font-varun font-medium hover:cursor-pointer">{post.fullName}</p>
                 </div>
                 <div className="flex flex-col gap-1 px-1 py-1">
                   <p className="font-sans font-extrabold text-[16px] text-white">{post.title}</p>
