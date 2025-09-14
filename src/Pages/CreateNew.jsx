@@ -40,7 +40,7 @@ const CreateNew = () => {
   const handleSubmit=async(e)=>{
     e.preventDefault()
     axios.defaults.withCredentials = true;
-    let url="https://backend-blog-ruddy.vercel.app/api/users/newposts";
+    let url="https://backend-blog-ruddy.vercel.app/api/posts/newposts";
     try{
       let response;
       const formDataToSend = new FormData();
