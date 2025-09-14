@@ -27,10 +27,10 @@ const Profile = () => {
          </div>
          <div className='flex flex-row gap-2 px-2 py-2 items-center'>
           <div className='px-1 py-1 '>
-            <img src={userData.profile_picture} alt={userData.name} className='sm:w-[100px] sm:h-[100px] w-[70px] h-[70px] object-cover rounded-full border-3 border-emerald-600'/>
+            <img src={userData.profile_pic} alt={userData.fullName} className='sm:w-[100px] sm:h-[100px] w-[70px] h-[70px] object-cover rounded-full border-3 border-emerald-600'/>
           </div>
           <div className='px-2'>
-            <p className='font-varun font-bold text-white text-[16px] sm:text-[18px]'>{userData.name}</p>
+            <p className='font-varun font-bold text-white text-[16px] sm:text-[18px]'>{userData.fullName}</p>
             <p className='font-serif  text-[14px] sm:text-[16px] text-gray-400'>{userData.about}</p>
           </div>
          </div>
