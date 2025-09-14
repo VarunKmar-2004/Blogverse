@@ -1,12 +1,35 @@
-# React + Vite
+# BlogVerse — A Blog Sharing Website
+A modern, performant blog platform focused on clean UX, fast dev workflow, and scalable real-time interactions.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tech Stack
+- MERN: MongoDB replaced with MySQL (Railway) for relational data
+  
+- Backend: Express.js + Node.js
+  
+- Frontend: React.js + Vite
+  
+- Database: MySQL hosted on Railway
+  
+- Styling: Tailwind CSS
+  
+- 3D Interaction: Spline (embedded interactive 3D scenes)
 
-Currently, two official plugins are available:
+# Features
+- Authentication (JWT-based with protected routes)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Publish, edit, and delete blog posts
 
-## Expanding the ESLint configuration
+- User profiles and author pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive UI with Tailwind CSS
+
+- Spline-based 3D elements for interactive hero/sections
+
+# Getting Started
+- Backend: Node.js + Express, MySQL (Railway) with an ORM/query layer (e.g., Prisma/Sequelize/knex — choose one)
+
+- Frontend: React + Vite, Tailwind CSS for styling
+
+- Configure MySQL database URL from Railway in server environment
+
+- Run Vite dev server for fast HMR during development
