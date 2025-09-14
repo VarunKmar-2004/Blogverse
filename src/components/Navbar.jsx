@@ -55,9 +55,9 @@ const Navbar = () => {
           <p onClick={() => alert('this page is under Developmet!!')} className='hover:text-emerald-400 hover:cursor-pointer'>Settings</p>
         </div>
       </div>
-        {userData?.profile_picture?(
+        {userData?.profile_picture|| userData?.fullName?(
           <div data-aos="fade-down" data-aos-duration='2000' className=' border-3 border-emerald-600 w-[40px] h-[40px] bg-white rounded-full hover:cursor-pointer hover:shadow-sm hover:shadow-emerald-700 transition-colors duration-200'>
-            <img  className='object-cover rounded-full w-full h-full' src={userData.profile_picture} alt={userData.name} onClick={()=>handleNavigate('/profile')}/>
+            <img  className='object-cover rounded-full w-full h-full' src={userData.profile_picture} alt={userData.fullName} onClick={()=>handleNavigate('/profile')}/>
           </div>
         ):(
           <div className='px-2 py-2'>

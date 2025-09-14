@@ -9,11 +9,11 @@ const Login = () => {
   const navigate=useNavigate();
   const [loginstatus,setLoginStatus]=useState('login')
   const [formData,setFormData]=useState({
-    name:'',
+    fullName:'',
     password:'',
     email:'',
     about:'',
-    profile_picture:null
+    profile_pic:null
   })
   const handleChange=(e)=>{
       const {name,value}=e.target;
@@ -28,7 +28,7 @@ const handleSubmit=async(e)=>{
    let url =
         loginstatus === "login"
           ? "https://backend-blog-ruddy.vercel.app/api/users/login"
-          : "https://backend-blog-ruddy.vercel.app/api/users/register";
+          : "https://backend-blog-ruddy.vercel.app/api/users/register"
    try{
     let response;
     if(loginstatus==='login'){
@@ -62,11 +62,11 @@ const handleSubmit=async(e)=>{
     
         // Reset form data
         setFormData({
-          name: "",
+          fullName: "",
           email: "",
           password: "",
           about: "",
-          profile_picture: null,
+          profile_pic: null,
         });
       } catch (error) {
         alert(`Error:${error.response?.data?.message || error.message}`);
@@ -93,7 +93,7 @@ const handleSubmit=async(e)=>{
             {loginstatus==='login'?"":(
               <>
                <div className='input-box'>
-                 <input name='name' onChange={handleChange} type="text" required></input>
+                 <input name='fullName' onChange={handleChange} type="text" required></input>
                  <label htmlFor='Name' className='font-varun'>Name</label>
                </div>
                <div className='input-box'>
