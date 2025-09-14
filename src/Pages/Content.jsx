@@ -9,9 +9,8 @@ const Content = () => {
     const [post, setPost] = useState(null);
     const fetchPost=async(id)=>{
        try {
-      const { data } = await axios.get(`https://backend-blog-ruddy.vercel.app/api/home/posts/${id}`);
-      setPost(data.result[0]);
-      console.log(post)
+      const { data } = await axios.get(`http://localhost:5000/api/home/posts/${id}`);
+      setPost(data);
     } catch (error) {
       console.error("Error fetching post:", error);
     }
@@ -43,12 +42,12 @@ const Content = () => {
     {/* Author info */}
     <div className='flex flex-row items-center gap-2'>
       <img
-        src={post.profile_picture}
+        src={post.user_id.profile_pic}
         alt='profile'
         className='w-[40px] h-[40px] object-cover rounded-full border-3 border-emerald-600'
       />
       <p className='font-varun font-semibold text-white text-[14px] sm:text-[16px]'>
-        {post.name}
+        {post.user_id.fullName}
       </p>
     </div>
 

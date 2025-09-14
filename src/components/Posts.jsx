@@ -100,7 +100,7 @@ const Posts = () => {
                 <div className="flex flex-col gap-1 px-1 py-1">
                   <p className="font-sans font-extrabold text-[16px] text-white">{post.title}</p>
                   <p className="font-serif text-[12px] text-gray-300">{post.description}</p>
-                  <button onClick={()=>handleNavigate(post.post_id)} className="py-2 px-2 bg-emerald-500 text-black font-varun font-semibold rounded-[4px] w-max hover:bg-emerald-400 cursor-pointer">
+                  <button onClick={()=>handleNavigate(post._id)} className="py-2 px-2 bg-emerald-500 text-black font-varun font-semibold rounded-[4px] w-max hover:bg-emerald-400 cursor-pointer">
                     Read More
                   </button>
                 </div>

@@ -45,7 +45,8 @@ const getAllPosts = async (category = 'All', page = 1, limit = 5) => {
     const { data } = await axios.get(baseUrl + query, { withCredentials: true });
     console.log(data)
     if (data && data.success) {
-      setPosts(data.result); // assuming result includes paginated posts
+      setPosts(data.result); 
+      console.log(data.result)// assuming result includes paginated posts
       setTotalPages(data.totalPages); // if backend sends this
     }
   } catch (err) {
