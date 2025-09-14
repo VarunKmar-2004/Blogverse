@@ -13,7 +13,7 @@ const CreateNew = () => {
   const [item,setItem]=useState('Life Style')
   const [aiOpen,setAiOpen]=useState(true)
   const [formdata,setFormData]=useState({
-    user_id:userData.id,
+    user_id:userData._id,
     title:"",
     description:"",
     content:"",
@@ -58,7 +58,7 @@ const CreateNew = () => {
         }
         // Reset form data
         setFormData({
-          user_id:userData.id,
+          user_id:userData._id,
           title:"",
           description:"",
           content:"",
